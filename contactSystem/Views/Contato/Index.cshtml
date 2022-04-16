@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Listagem de Contatos";
+}
+
+
+<div class="text-center">
+    <div class="text-left">
+        <a class="btn btn-primary" asp-controller="Contato" asp-action="Criar" style="color:white;" role="button">Adicionar Novo Contato +</a>
+    </div>
+
+    <h1 class="display-4">LISTAGEM DE CONTATOS</h1>
+
+    <table class="table text-left">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">NOME</th>
+          <th scope="col">E-MAIL</th>
+          <th scope="col">CELULAR</th>
+          <th scope="col"></th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Guilherme</td>
+          <td>guilherme@gmail.com</td>
+          <td>11 94210-4521</td>
+          <td>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                  <a role="button" class="btn btn-warning" asp-controller="Contato" asp-action="Editar">Editar</a>
+                  <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="Excluir">Apagar</a>
+              </div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Guilherme</td>
+          <td>guilherme@gmail.com</td>
+          <td>11 94210-4521</td>
+          <td>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                  <a role="button" class="btn btn-warning" asp-controller="Contato" asp-action="Editar">Editar</a>
+                  <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="Excluir">Apagar</a>
+              </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+</div>
