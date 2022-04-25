@@ -22,19 +22,38 @@ namespace contactSystem.Controllers
         {
             return View();
         }
-        public IActionResult Editar()
+        public IActionResult Editar(int id)
         {
-            return View();
+            ContatoModels contato = _contatoRepository.Get(id);
+            return View(contato);
         }
-        public IActionResult Excluir()
+        public IActionResult Excluir(int id)
         {
-            return View();
+            ContatoModels contato = _contatoRepository.Get(id);
+            return View(contato);
         }
+
+
+        //HTTP METHODS
         [HttpPost]
         public IActionResult Add(ContatoModels contato)
         {
             _contatoRepository.Add(contato);
             return RedirectToAction("Index");
         }
+
+        [HttpPost]
+        public IActionResult Alter(ContatoModels contato)
+        {
+            _contatoRepository.Alter(contato);
+            return RedirectToAction("Index");
+        }
+        public IActionResult Delete(int id)
+        {
+            _contatoRepository.Delete(id);
+            return RedirectToAction("Index");
+
+        }
+
     }
 }

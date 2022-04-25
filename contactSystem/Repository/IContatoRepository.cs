@@ -6,6 +6,11 @@ namespace contactSystem.Repository
     {
         IEnumerable<ContatoModels> Add(ContatoModels contato);
         IEnumerable<ContatoModels> GetAll();
+        ContatoModels Get(int id);
+        IEnumerable<ContatoModels> Alter(ContatoModels contato);
+        IEnumerable<ContatoModels> Delete(int id);
+
+
 
     }
 }
