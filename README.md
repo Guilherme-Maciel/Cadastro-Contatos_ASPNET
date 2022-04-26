@@ -1,7 +1,8 @@
 
 # SISTEMA DE CADASTRO DE CONTATOS
 
-Aplicação de CRUD, utilizando ASP.NET MVC e banco de dados MySQL
+Aplicação de CRUD, utilizando ASP.NET MVC e banco de dados MySQL.
+Créditos: Canal Programador Tech.
 
 ![Generic badge](https://img.shields.io/badge/.NET-5.0-purple.svg)
 ![Generic badge](https://img.shields.io/badge/CSHARP-9-purple.svg)
@@ -56,6 +57,7 @@ Startup.cs
 ## BANCO DE DADOS 
 
 ```sql
+/*
 MySQL - 5.7.34-37-log : Database - dtm_teste_guilherme
 *********************************************************************
 */
